@@ -1,0 +1,70 @@
+\documentclass[9pt, letterpaper]{article}
+
+% --- Space Optimization & Hyperlinks ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=0.45in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+
+% Setup for professional blue clickable links
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue,
+}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{8pt}{4pt}
+
+\begin{document}
+	\pagestyle{empty}
+
+	% --- SPLIT HEADER ---
+	\noindent {\huge \textbf{[FULL NAME]}} \hfill [PHONE] | \href{[WEBSITE URL]}{\textbf{Website}} | \href{[LINKEDIN URL]}{\textbf{LinkedIn}} |
+	\\
+	\noindent {\large \textbf{[TARGET ROLE TITLE]}} \hfill \href{mailto:[EMAIL]}{\textbf{[EMAIL]}}
+
+	% Professional Summary
+	\section*{PROFESSIONAL SUMMARY}
+	\noindent [Write a 2-4 sentence summary highlighting years of experience, domain expertise, leadership scope, and measurable impact.]
+
+	% Skills
+	\section*{SKILLS}
+	\noindent \textbf{Leadership \& Strategy:} [Leadership skill 1], [Leadership skill 2], [Leadership skill 3], [Leadership skill 4] \\
+	\noindent \textbf{Analytics Engineering:} [Skill 1], [Skill 2], [Skill 3], [Skill 4] \\
+	\noindent \textbf{Data Stack:} [Tool/Language 1], [Tool/Language 2], [Tool/Language 3], [Tool/Language 4] \\
+	\noindent \textbf{BI \& Platforms:} [Platform 1], [Platform 2], [Platform 3], [Platform 4]
+
+	% Professional Experience
+	\section*{PROFESSIONAL EXPERIENCE}
+
+	\noindent \textbf{[COMPANY NAME]} | [JOB TITLE] \hfill [Mon YY -- Mon YY or Present]
+	\begin{itemize}[noitemsep, topsep=1pt, leftmargin=1.5em, rightmargin=3.5cm]
+		\item [Achievement with action + scope + outcome/metric]
+		\item [Achievement with technologies/methods used]
+		\item [Leadership/collaboration/process impact]
+	\end{itemize}
+
+	\noindent \textbf{[COMPANY NAME]} | [JOB TITLE] \hfill [Mon YY -- Mon YY]
+	\begin{itemize}[noitemsep, topsep=1pt, leftmargin=1.5em, rightmargin=3.5cm]
+		\item [Achievement with action + scope + outcome/metric]
+		\item [Achievement with technologies/methods used]
+		\item [Leadership/collaboration/process impact]
+	\end{itemize}
+
+	\noindent \textbf{[COMPANY NAME]} | [JOB TITLE] \hfill [Mon YY -- Mon YY]
+	\begin{itemize}[noitemsep, topsep=1pt, leftmargin=1.5em]
+		\item [Achievement with action + scope + outcome/metric]
+		\item [Achievement with technologies/methods used]
+	\end{itemize}
+
+	% Education
+	\section*{EDUCATION}
+	\noindent \textbf{[DEGREE]} -- [UNIVERSITY] \hfill [Mon YY -- Mon YY] \\
+	\noindent \textbf{[CERTIFICATIONS / ADDITIONAL EDUCATION]:} [Certification 1], [Certification 2], [Certification 3].
+
+\end{document}
