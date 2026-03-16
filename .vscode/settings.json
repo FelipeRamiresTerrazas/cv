@@ -1,7 +1,7 @@
 {
   "latex-workshop.latex.autoBuild.run": "onSave",
   "latex-workshop.view.pdf.viewer": "tab",
-  "latex-workshop.latex.outDir": "out",
+  "latex-workshop.latex.outDir": "%DIR%/../build",
   "latex-workshop.synctex.afterBuild.enabled": true,
   "latex-workshop.latex.recipe.default": "first",
   "latex-workshop.latex.tools": [

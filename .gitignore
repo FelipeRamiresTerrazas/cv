@@ -8,5 +8,5 @@
 *.lof
 *.lot
 
-# Optional build output directory
-out/
+# Build artifacts directory
+build/
