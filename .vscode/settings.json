@@ -12,7 +12,17 @@
         "-synctex=1",
         "-interaction=nonstopmode",
         "-file-line-error",
+        "-output-directory=%OUTDIR%",
         "%DOC%"
+      ]
+    },
+    {
+      "name": "copy-pdf",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-Command",
+        "Copy-Item '%OUTDIR%/%DOCFILE%.pdf' '%DIR%/../output/%DOCFILE%.pdf' -Force"
       ]
     }
   ],
@@ -20,7 +30,8 @@
     {
       "name": "pdflatex",
       "tools": [
-        "pdflatex"
+        "pdflatex",
+        "copy-pdf"
       ]
     }
   ]
