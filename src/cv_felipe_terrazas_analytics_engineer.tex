@@ -1,0 +1,91 @@
+\documentclass[9pt, letterpaper]{article}
+
+% --- Space Optimization & Hyperlinks ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=0.45in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+
+% Setup for professional blue clickable links
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue,
+}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{8pt}{4pt}
+
+\begin{document}
+	\pagestyle{empty}
+
+	% --- SPLIT HEADER ---
+	\noindent {\huge \textbf{Felipe Ramires Terrazas}} \hfill +55 (19) 9 9969 2741 | \href{https://feliperamiresterrazas.github.io/professionalwebsite/}{\textbf{Website}} | \href{https://www.linkedin.com/in/felipe-ramires-terrazas/}{\textbf{LinkedIn}} |
+	\\
+	\noindent {\large \textbf{Analytics Engineer}} \hfill \href{mailto:felipe.agro.terrazas@gmail.com}{\textbf{felipe.agro.terrazas@gmail.com}}
+
+	% Professional Summary
+	\section*{PROFESSIONAL SUMMARY}
+	\noindent Analytics Engineer with 7+ years of experience building reliable data pipelines and analytics-ready data layers. Hands-on with dbt (modeling, testing, documentation) and Snowflake, with a CI/CD approach using GitHub Actions and git to automate deployments and enforce code quality. Proven track record of authoring dbt tests for data quality and integrity, architecting Snowflake warehouses from the ground up, and enabling self-service analytics across cross-functional teams.
+
+	% Skills
+	\section*{SKILLS}
+	\noindent \textbf{Analytics Engineering:} dbt (Modeling, Testing, Documentation, Packages), ETL/ELT, Data Modeling (Star/Snowflake Schema, Dimensional Modeling) \\
+	\noindent \textbf{Data Platforms:} Snowflake (SQL, RBAC, Performance Tuning, Cost Optimization), SQL Server, Oracle, Fivetran \\
+	\noindent \textbf{CI/CD \& Version Control:} GitHub Actions, git (Branching Strategies, PR Workflows), dbt Cloud/Core, Automated Pipeline Testing \\
+	\noindent \textbf{Data Quality \& Governance:} dbt Schema Tests, Singular Tests, Source Freshness Checks, Data Contracts, Alation, Confluence \\
+	\noindent \textbf{BI \& Collaboration:} Power BI, Tableau, ThoughtSpot, Agile/SCRUM (Jira/Confluence)
+
+	% Professional Experience
+	\section*{PROFESSIONAL EXPERIENCE}
+
+	\noindent \textbf{YMX Logistics} | Data Analyst \hfill July 25 -- Present
+	\begin{itemize}[noitemsep, topsep=1pt, leftmargin=1.5em, rightmargin=0.5cm]
+		\item Built and maintained dbt models on Snowflake using a modular layered architecture (staging $\rightarrow$ intermediate $\rightarrow$ marts), enabling reliable and reusable datasets across all business units.
+		\item Established CI/CD pipelines using GitHub Actions and git branching workflows to automate dbt testing and deployment, preventing production regressions and enforcing peer-review standards via pull requests.
+		\item Authored dbt tests—schema, referential integrity, source freshness, and custom singular tests—to enforce data quality and integrity across all reporting layers, eliminating recurring data discrepancy issues.
+		\item Architected Snowflake infrastructure from the ground up, defining RBAC policies and query optimization patterns that reduced warehousing costs by 50\%.
+	\end{itemize}
+
+	\noindent \begin{minipage}[t]{0.75\textwidth}
+		\textbf{WEX INC} | Risk Data Analyst
+	\end{minipage}
+	\begin{minipage}[t]{0.25\textwidth}
+		\raggedleft Nov 23 -- July 25
+	\end{minipage}
+
+	\begin{itemize}[noitemsep, topsep=1pt, leftmargin=1.5em, rightmargin=0.5cm]
+		\item Contributed to dbt model development and source-level data quality testing in Snowflake, ensuring accuracy and consistency of risk, collections, and fraud datasets consumed by downstream BI tools.
+		\item Modeled Snowflake tables and views applying dimensional modeling best practices, enabling ThoughtSpot's AI-driven natural language search to deliver accurate, context-aware results for non-technical users.
+		\item Designed and maintained scalable Tableau dashboards and data marts in partnership with Data Engineering, providing proactive risk portfolio monitoring in a regulated financial services environment.
+		\item Managed sprint ceremonies using Jira (SCRUM) and maintained analytics engineering documentation in Confluence and Alation, keeping deliverables aligned with business risk priorities.
+	\end{itemize}
+
+	\noindent \textbf{CMA CGM} | BPM Specialist \hfill Nov 21 -- Nov 23
+	\begin{itemize}[noitemsep, topsep=1pt, leftmargin=1.5em, rightmargin=0.5cm]
+		\item Led Digital Transformation initiatives including QlikSense analytics deployments, improving operational visibility and enabling data-driven decisions at the business-unit level.
+		\item Established analytics best practices and delivered advanced user training, expanding data literacy and reducing IT dependency for reporting.
+		\item Applied Lean Six Sigma to identify and eliminate operational inefficiencies, delivering measurable improvements in throughput and cost reduction.
+	\end{itemize}
+
+	\noindent \textbf{SmartBreeder} | Business Intelligence Analyst \hfill Dec 19 -- Nov 21
+	\begin{itemize}[noitemsep, topsep=1pt, leftmargin=1.5em, rightmargin=0.5cm]
+		\item Built and maintained a Power BI and SQL Server data warehouse, creating a single source of truth that supported strategic reporting and eliminated data inconsistencies across the organization.
+		\item Drove analytics adoption by delivering Power BI training across all skill levels, empowering teams to independently answer data questions and reduce analyst bottlenecks.
+	\end{itemize}
+
+	\noindent \textbf{Cargill} | Projects Intern \hfill Jan 19 -- Dec 19
+	\begin{itemize}[noitemsep, topsep=1pt, leftmargin=1.5em, rightmargin=0.5cm]
+		\item Delivered digital automation tools (VBA, Power BI, Power Apps) for internal departments, streamlining workflows and freeing capacity for higher-value analytical work.
+	\end{itemize}
+
+	% Education
+	\section*{EDUCATION}
+	\noindent \textbf{Agricultural Engineering} -- University of São Paulo (ESALQ) \hfill Jan 15 -- Dec 19 \\
+	\noindent \textbf{MBAs:} IT Project Management (2024), Big Data \& Analytics (2023), Logistics Management \& Production Engineering (2023), Applied Data Science (2022), Business Intelligence (2021).
+
+\end{document}
