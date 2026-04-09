@@ -100,6 +100,33 @@ Build is triggered automatically on every save (`"latex-workshop.latex.autoBuild
 
 ---
 
+## CV Submission Log
+
+To avoid confusion between multiple CV versions, keep a single tracking file at:
+
+- `output/cv_usage_log.md`
+
+This log links each generated PDF to the role/company where it was used.
+
+Suggested minimum fields per entry:
+
+- Date
+- Output PDF filename
+- Source `.tex` filename (if available)
+- Company
+- Role / Job posting
+- Notes
+
+Example:
+
+| Date | Output PDF | Source TEX | Company | Role | Notes |
+|---|---|---|---|---|---|
+| 2026-04-09 | `cv_felipe_terrazas_data_specialist.pdf` | N/A | Delivery Hero | Data Specialist | Custom version used for Delivery Hero application |
+
+Update this file whenever you send a CV. This gives you one place to audit where each version was used.
+
+---
+
 ## Website (`web/`)
 
 A lightweight static personal website is included for showcasing the professional profile online.
