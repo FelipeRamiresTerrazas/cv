@@ -1,0 +1,90 @@
+\documentclass[9pt, letterpaper]{article}
+
+% --- Space Optimization & Hyperlinks ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=0.42in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+
+% Setup for professional blue clickable links
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue,
+}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{6pt}{3pt}
+
+\begin{document}
+	\pagestyle{empty}
+
+	% --- SPLIT HEADER ---
+	\noindent {\huge \textbf{Felipe Ramires Terrazas}} \hfill +55 (19) 9 9969 2741 | \href{https://feliperamiresterrazas.github.io/professionalwebsite/}{\textbf{Website}} | \href{https://www.linkedin.com/in/felipe-ramires-terrazas/}{\textbf{LinkedIn}} |
+	\\
+	\noindent {\large \textbf{Analytics Engineer}} \hfill \href{mailto:felipe.agro.terrazas@gmail.com}{\textbf{felipe.agro.terrazas@gmail.com}}
+
+	% Professional Summary
+	\section*{PROFESSIONAL SUMMARY}
+	\noindent Analytics Engineer with 7+ years building and governing enterprise data systems on Snowflake, focused on data quality, observability, and transforming unstructured data into structured, analytics-ready layers. Experienced integrating AI-driven platforms (Dataiku, ThoughtSpot AI) with Snowflake ecosystems. Strong Python and SQL skills with a track record of architecting Snowflake infrastructure, enforcing data quality pipelines, and delivering reliable data products at enterprise scale. C1/C2 English.
+
+	% Skills
+	\section*{SKILLS}
+	\noindent \textbf{Snowflake:} Architecture \& Design (RBAC, Warehouses, Schemas), SQL Performance Tuning, Cost Optimization, ETL/ELT Pipelines, AWS \\
+	\noindent \textbf{Data Engineering \& Quality:} dbt (Modeling, Testing, Source Freshness, Data Contracts), Fivetran, CI/CD (GitHub Actions, git), Data Observability Dashboards, Alation \\
+	\noindent \textbf{Programming:} Python, SQL (Snowflake / Oracle / SQL Server), R, DAX \\
+	\noindent \textbf{AI \& Analytics Platforms:} Dataiku, ThoughtSpot AI (Natural Language Search), Power BI (Expert), Tableau, QlikSense \\
+	\noindent \textbf{Collaboration \& Delivery:} Agile/SCRUM (Jira/Confluence), Stakeholder Management, Data Governance (Alation/Confluence)
+
+	% Professional Experience
+	\section*{PROFESSIONAL EXPERIENCE}
+
+	\noindent \textbf{YMX Logistics} | Analytics Engineer \hfill Jul 25 -- Present
+	\begin{itemize}[noitemsep, topsep=0pt, leftmargin=1.5em, rightmargin=0.5cm]
+		\item Architected Snowflake infrastructure from the ground up, defining RBAC policies, warehouse sizing, and schema design to serve as the system of record for all business-critical data, enabling reliable data consumption across the organization.
+		\item Designed and deployed data observability controls: authored dbt schema, referential integrity, source freshness, and custom singular tests to continuously monitor data quality across all pipeline layers, eliminating recurring discrepancy incidents.
+		\item Engineered ETL/ELT pipelines to ingest, parse, and transform unstructured and semi-structured data into governed, analytics-ready Snowflake tables using a modular layered dbt architecture (staging $\rightarrow$ intermediate $\rightarrow$ marts).
+		\item Drove a \textbf{50\% reduction} in Snowflake warehousing costs through query optimization, warehouse auto-suspend tuning, and engineering best practices.
+	\end{itemize}
+
+	\noindent \begin{minipage}[t]{0.75\textwidth}
+		\textbf{WEX INC} | Risk Data Analyst
+	\end{minipage}
+	\begin{minipage}[t]{0.25\textwidth}
+		\raggedleft Nov 23 -- Jul 25
+	\end{minipage}
+
+	\begin{itemize}[noitemsep, topsep=0pt, leftmargin=1.5em, rightmargin=0.5cm]
+		\item Modeled Snowflake tables and views to feed ThoughtSpot's AI-driven natural language search, ensuring the structured data layer delivered accurate, context-aware responses for non-technical end users, directly analogous to structuring data for LLM consumption.
+		\item Developed and maintained dbt models and data quality tests on Snowflake, ensuring accuracy and consistency of risk, collections, and fraud datasets consumed by downstream analytics and AI tools.
+		\item Conducted advanced SQL analyses in Snowflake to surface risk and fraud patterns in high-volume datasets, translating findings into prioritized, actionable recommendations for business teams.
+		\item Designed and maintained scalable Tableau dashboards and data marts in partnership with Data Engineering, providing continuous monitoring of risk portfolio health in a regulated financial services environment.
+	\end{itemize}
+
+	\noindent \textbf{CMA CGM} | BPM Specialist \hfill Nov 21 -- Nov 23
+	\begin{itemize}[noitemsep, topsep=0pt, leftmargin=1.5em, rightmargin=0.5cm]
+		\item Led Digital Transformation initiatives including QlikSense analytics deployments and Python-based automation projects, improving operational visibility and enabling data-driven decisions at scale.
+		\item Established analytics best practices, governance frameworks, and documentation standards in Confluence; facilitated training programs that accelerated self-service tool adoption across business units.
+	\end{itemize}
+
+	\noindent \textbf{SmartBreeder} | Business Intelligence Analyst \hfill Dec 19 -- Nov 21
+	\begin{itemize}[noitemsep, topsep=0pt, leftmargin=1.5em, rightmargin=0.5cm]
+		\item Built and maintained a SQL Server data warehouse and Power BI reporting layer, creating a single source of truth that supported strategic decision-making and eliminated data inconsistencies.
+		\item Drove analytics adoption by delivering structured Power BI training across all skill levels, empowering teams to independently answer data questions and reduce analyst bottlenecks.
+	\end{itemize}
+
+	\noindent \textbf{Cargill} | Projects Intern \hfill Jan 19 -- Dec 19
+	\begin{itemize}[noitemsep, topsep=0pt, leftmargin=1.5em, rightmargin=0.5cm]
+		\item Delivered digital automation tools (Python, VBA, Power BI, Power Apps) for internal departments, streamlining workflows and freeing capacity for higher-value analytical work.
+	\end{itemize}
+
+	% Education
+	\section*{EDUCATION}
+	\noindent \textbf{Agricultural Engineering} -- University of S\~{a}o Paulo (ESALQ) \hfill Jan 15 -- Dec 19 \\
+	\noindent \textbf{MBAs:} IT Project Management (2024), Big Data \& Analytics (2023), Logistics Management \& Production Engineering (2023), Applied Data Science (2022), Business Intelligence (2021).
+
+\end{document}
