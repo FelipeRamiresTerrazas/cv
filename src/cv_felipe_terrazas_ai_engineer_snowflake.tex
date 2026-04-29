@@ -47,7 +47,7 @@
 	\begin{itemize}[noitemsep, topsep=0pt, leftmargin=1.5em, rightmargin=0.5cm]
 		\item Architected Snowflake infrastructure from the ground up, defining RBAC policies, warehouse sizing, and schema design to serve as the system of record for all business-critical data, enabling reliable data consumption across the organization.
 		\item Designed and deployed data observability controls: authored dbt schema, referential integrity, source freshness, and custom singular tests to continuously monitor data quality across all pipeline layers, eliminating recurring discrepancy incidents.
-		\item Engineered ETL/ELT pipelines to ingest, parse, and transform unstructured and semi-structured data into governed, analytics-ready Snowflake tables using a modular layered dbt architecture (staging $\rightarrow$ intermediate $\rightarrow$ marts).
+		\item Engineered ETL/ELT pipelines to ingest, parse, and transform unstructured and semi-structured data into governed, analytics-ready Snowflake tables using a modular layered dbt architecture (raw $\rightarrow$ staging $\rightarrow$ marts).
 		\item Drove a \textbf{50\% reduction} in Snowflake warehousing costs through query optimization, warehouse auto-suspend tuning, and engineering best practices.
 	\end{itemize}
 
